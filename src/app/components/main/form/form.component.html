@@ -1,0 +1,31 @@
+<form [formGroup]="jokeForm" class="form">
+  <div class="input__container">
+    <label for="question">Question</label>
+    <br />
+    <input
+      id="question"
+      placeholder="Enter the question"
+      formControlName="question"
+      type="text"
+    />
+  </div>
+  <div class="input__container">
+    <label for="punchline">Punchline</label>
+    <br />
+    <input
+      id="punchline"
+      name="punchline"
+      placeholder="Enter the punchline"
+      type="text"
+      formControlName="punchline"
+    />
+  </div>
+  <button
+    class="btn btn--create"
+    type="button"
+    (click)="addJoke()"
+    [disabled]="!jokeForm.valid"
+  >
+    Create
+  </button>
+</form>

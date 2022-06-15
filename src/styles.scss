@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/reset.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+body {
+  background-color: #1d2228;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+app-form {
+  width: 100%;
+}
+app-joke-list {
+  width: 100%;
+}
+app-joke-card {
+  width: 100%;
+}
+
+.btn {
+  background-color: #1d2228;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.85);
+  }
+}
+input {
+  &:focus {
+    outline: 0.5px dotted rgb(226, 26, 0);
+  }
+}

@@ -1,0 +1,8 @@
+<div class="main__container">
+  <h3>Create a joke</h3>
+  <app-form (addJokeEvent)="addJoke($event)"></app-form>
+  <app-joke-list
+    (deleteJokeOutput)="deleteJoke($event)"
+    [jokes]="jokes"
+  ></app-joke-list>
+</div>

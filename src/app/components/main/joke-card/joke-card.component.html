@@ -1,0 +1,10 @@
+<div *ngIf="joke" class="joke__card">
+  <span>{{ joke.question }}</span>
+  <span class="punchline" *ngIf="showPunchline">{{ joke.punchline }}</span>
+  <div class="btn__container">
+    <button class="btn btn--show" (click)="toggleShowPunchline()">
+      Tell me
+    </button>
+    <button class="btn btn--delete" (click)="deleteJoke()">Delete</button>
+  </div>
+</div>

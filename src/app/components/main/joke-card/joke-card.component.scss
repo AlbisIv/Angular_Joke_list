@@ -1,0 +1,24 @@
+.joke__card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(156, 156, 156);
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn__container {
+  display: flex;
+  gap: 3px;
+}
+.btn--show {
+  background-color: rgb(91, 94, 54);
+}
+.btn--delete {
+  background-color: rgba(201, 0, 0, 0.479);
+}
+.punchline {
+  font-size: 0.8rem;
+  font-style: italic;
+}

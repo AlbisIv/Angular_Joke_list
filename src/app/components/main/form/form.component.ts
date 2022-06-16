@@ -20,7 +20,7 @@ export class FormComponent implements OnInit {
 
   buildForm(): void {
     this.jokeForm = this.fb.group({
-      question: ['', [Validators.required]],  //[] ir kā validators
+      question: ['', [Validators.required]],
       punchline: ["", [Validators.required]],
     })
   }

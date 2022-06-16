@@ -24,7 +24,7 @@ export class MainComponent {
   ]
 
   addJoke(joke: JokeType): void {
-    this.jokes = [...this.jokes, joke];
+    this.jokes = [ joke, ...this.jokes];
     console.log(this.jokes)
   }
   deleteJoke(index: number): void {

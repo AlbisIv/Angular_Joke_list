@@ -9,29 +9,18 @@ import { JokeType } from './modules/jokeType';
 export class MainComponent {
   jokes = [
     {
-      question: 'What is the best part of a bug?',
-      punchline: 'The bug\'s tail.'
+      question: 'What did the pirate say when he turned 80?',
+      punchline: 'Aye Matey!'
     },
     {
-      question: 'What do you call a bug with no eyes?',
-      punchline: 'A blind bug.'
+      question: 'What is the difference between a well dressed man on a bike and a poorly dressed man on a unicycle?',
+      punchline: 'Attire.'
     },
     {
-      question: 'What do you call a bug with no legs?',
-      punchline: 'A footless bug.'
-    }, 
-    {
-      question: 'What do you call a bug with no arms?',
-      punchline: 'A wingless bug.'
+      question: 'I came up with a new word yesterday',
+      punchline: 'Plagiarism'
     },
-    {
-      question: 'What do you call a bug with no legs or arms?',
-      punchline: 'A bug with no body.'
-    },
-    {
-      question: 'What do you call a bug with no legs or arms or eyes?',
-      punchline: 'A bug with no head.'
-    },
+    
   ]
 
   addJoke(joke: JokeType): void {
